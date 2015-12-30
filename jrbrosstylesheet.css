@@ -41,3 +41,9 @@
 .fn {
   color: #FF0015;
 }
+
+.quotes {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 24px;
+}
