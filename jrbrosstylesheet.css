@@ -1,0 +1,43 @@
+* {
+  font-family: impact;
+}
+.jumbotron {
+  height: 500px;
+  background-image: url('img/jumboE.jpg');
+}
+
+/* How to make Sidebars work? */
+#sidebarL {
+  position: absolute;
+  float: left;
+  width: 20px;
+}
+
+#sidebarR {
+  position: absolute;
+  float: right;
+  width: 20px;
+}
+/* end Sidebars */
+
+.container {
+  position: relative;
+  padding: 10px 10px 10px 10px;
+}
+.container h1 {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.profile {
+  font-size: 30px;
+}
+
+.details li {
+  font-size: 24px;
+}
+
+.fn {
+  color: #FF0015;
+}
