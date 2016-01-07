@@ -4,6 +4,8 @@
 .jumbotron {
   height: 500px;
   background-image: url('img/jumboE.jpg');
+  position: relative;
+  font-family: impact;
 }
 
 /* How to make Sidebars work? */
@@ -11,12 +13,14 @@
   position: absolute;
   float: left;
   width: 20px;
+  background-color: blue;
 }
 
 #sidebarR {
   position: absolute;
   float: right;
   width: 20px;
+  background-color: gold;
 }
 /* end Sidebars */
 
@@ -42,8 +46,12 @@
   color: #FF0015;
 }
 
-.quotes {
+.quotes li {
   font-family: sans-serif;
   font-style: italic;
   font-size: 24px;
+}
+
+.link a {
+  font-size: 18px;
 }
