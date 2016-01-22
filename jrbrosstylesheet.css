@@ -1,11 +1,12 @@
 * {
-  font-family: impact;
+  font-family: helvetica;
 }
 .jumbotron {
   height: 500px;
   background-image: url('img/jumboE.jpg');
   position: relative;
   font-family: impact;
+  text-align: center;
 }
 
 /* How to make Sidebars work? */
@@ -13,14 +14,13 @@
   position: absolute;
   float: left;
   width: 20px;
-  background-color: blue;
 }
 
 #sidebarR {
   position: absolute;
+  background-color: blue;
   float: right;
-  width: 20px;
-  background-color: gold;
+  width: 200px;
 }
 /* end Sidebars */
 
@@ -36,10 +36,22 @@
 
 .profile {
   font-size: 30px;
+  color: #1336C1;
+  border-style: groove;
+  border-color: #EFEB15;
+  border-width: 20px;
+  text-align: center;
 }
 
 .details li {
+  color: #1336C1;
   font-size: 24px;
+  border: 10px 10px 10px 10px;
+  border-color: #EFEB15;
+  border-width: thick;
+  border-style: groove;
+  list-style-type: none;
+  text-align: center;
 }
 
 .fn {
@@ -50,8 +62,14 @@
   font-family: sans-serif;
   font-style: italic;
   font-size: 24px;
+  border-style: none;
+  color: #000;
 }
 
 .link a {
   font-size: 18px;
+}
+
+.thumbnail img {
+  height: 250px;
 }
