@@ -1,71 +1,568 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html class="no-js" lang="en-US">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Welcome</title>
+    <!-- SITE TITLE -->
+    <title>Hello and Welcome!</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- =========================
+       Title icon
+    ============================== -->
 
-    <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- =========================
+       Bootstrap and animation
+    ============================== -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- =========================
+       Fonts, typography and icons
+    ============================== -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/typography.css">
+
+    <!-- =========================
+       Carousel, lightbox and circle generator
+    ============================== -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo-lightbox-default.css">
+    <link rel="stylesheet" href="css/jquery.circliful.css">
+
+    <!-- ***** Custom Stylesheet ***** -->
+    <link rel="stylesheet" href="css/main-blue.css">
+
+    <!-- ***** Responsive fixes ***** -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Header scripts -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/queryloader2.min.js"></script>
+
+    <!-- =========================
+       Preloader
+    ============================== -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            "use strict";
+            new QueryLoader2(document.querySelector("body"), {
+                barColor: "#3498db",
+                backgroundColor: "#111",
+                percentage: true,
+                barHeight: 1,
+                minimumTime: 200,
+                fadeOutTime: 1000
+            });
+        });
+        var alert_color_success_background = '#3498db';
+        var alert_color_error_background = '#CF000F';
+
+    </script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-</head>
+    <!-- =========================
+       Fullscreen menu
+    ============================== -->
+    <div class="mobilenav">
+        <ul>
+            <li data-rel="#header">
+                <span class="nav-label">Home</span>
+            </li>
+            <li data-rel="#about-us">
+                <span class="nav-label">About Me</span>
+            </li>
+            <li data-rel="#portfolio">
+                <span class="nav-label">My Projects</span>
+            </li>
+            <!-- <li data-rel="#our-team">
+                <span class="nav-label">Coursework</span>
+            </li> -->
+            <li data-rel="#why-choose-us">
+                <span class="nav-label">Technical Skills</span>
+            </li>
+            <li data-rel="#send-message">
+                <span class="nav-label">Contact Me</span>
+            </li>
+        </ul>
+    </div>  <!-- *** end Full Screen Menu *** -->
 
-<body>
+    <!-- *****  hamburger icon ***** -->
+    <a href="javascript:void(0)" class="menu-trigger">
+       <div class="hamburger">
+         <div class="menui top-menu"></div>
+         <div class="menui mid-menu"></div>
+         <div class="menui bottom-menu"></div>
+       </div>
+    </a>
 
-    <div id="wrapper">
 
-        <!-- Sidebar -->
-        {{> sidebar }}
-        <!-- /#sidebar-wrapper -->
+    <!-- =========================
+       Header
+    ============================== -->
+    <header id="header">
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Welcome to my website!</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+
+                <!-- *****  Logo ***** -->
+                <!-- <div class="logo-container">
+                    <a href="#">
+                        <img src="img/logo-header.png" height="37" width="197" alt="">
+                    </a>
+                </div> -->
+
+                <!-- =========================
+                   Landing-Intro
+                ============================== -->
+                <div class="item active">
+
+                    <!-- Set the first background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('img/landing-bg.jpg');">
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="light mab-none">Hello, My name is <strong class="bold-text">Paulo</strong>!</h1>
+                        <h1 class="light margin-bottom-medium mat-none"><strong class="bold-text">Welcome</strong> to my website!</h1>
+                        <p class="light margin-bottom-medium">Fourth Year student, Prospective Front-End Developer</p>
+                        <div class="call-button">
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-12">
+                                    <a href="#about-us" class="button pull-right internal-link bold-text light hvr-grow" data-rel="#about-us">About Me</a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <a href="#portfolio" class="button pull-left internal-link bold-text main-bg hvr-grow" data-rel="#portfolio">My Projects</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+
+        </div>
+    </header> <!-- *** end Header *** -->
+
+    <!-- =========================
+       About Me
+    ============================== -->
+    <section id="about-us" class="about-us">
+        <div class="overlay">
+            <div class="container padding-top-large">
+                <h2>
+                    <strong class="bold-text">About</strong>
+                    <span class="light-text main-color">Paulo</span>
+                </h2>
+                <div class="line main-bg"></div>
+                <div class="row margin-bottom-medium">
+                    <div class="col-md-7">
+                        <div class="jumbo-text light-text margin-top-medium wow slideInLeft" data-wow-duration="2s">
+                            Student, <strong class="bold-text">Software Developer</strong> and Designer
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/me3.jpg" style="height: 75%; width: 75%" alt="About Us Big Image" class="center-block img-responsive">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="margin-bottom-medium wow slideInUp">I'm spending my last year in UC San Diego after coming in as an Electrical Engineering major.
+                  I made the switch to Cognitive Science and Computer Science at the end of my sophomore year, and now I'm specializing in Human-Computer
+                  Interaction and Front-End Development. For this last year, I am also interested in learning about Artificial Intelligence from both the
+                  Cognitive Science and Computer Science departments.
+                </p>
+                <p class="margin-bottom-medium wow slideInUp">I'm originally from the Philippines, moving to the Big Island of Hawaii a week before I turned 10.
+                  I lived there for 5 years, moving to New Jersey for half a year, and finally settling in Ventura County here in California. Some of my hobbies include
+                  reading, cooking, and sports. I like to read various genres and among my favorite authors are J.R.R Tolkien and C.S. Lewis. I like studying History, especially
+                  Military history, but I also like anything military related. I love soccer, and I'm an avid fan of Liverpool FC and the German Football team.
+                  I also highly enjoy tennis, volleyball, and table tennis. Recently I've been working on photography as well, and my landing page background is a photo I took!
+                </p>
+                <div class="row margin-top-large">
+                    <div class="col-md-4">
+                        <img src="img/me4.jpg" style="height: 400px;" class="center-block img-responsive"/>
+                    </div> <!-- *** end col-md-8 *** -->
+                    <div class="col-md-4">
+                        <img src="img/me5.jpg" class="center-block img-responsive"/>
+                    </div> <!-- *** end col-md-8 *** -->
+                    <div class="col-md-4">
+                        <img src="img/soccer1.jpg" class="center-block img-responsive" alt="Case Study">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
+    </section> <!-- *** end About Us *** -->
 
+
+    <!-- =========================
+       Technical Skills
+    ============================== -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container margin-top-large">
+            <h2>
+                My
+                <span class="light-text main-color">Designer Skills</span>
+            </h2>
+            <div class="line main-bg margin-bottom-large"></div>
+
+            <div class="row text-center">
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow slideInLeft">
+                        <div class="icon"><i class="icon-idea"></i></div>
+                        <h4><strong>User Needfinding</strong></h4>
+                        <p>Search for application user needs through getting to know them!</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow fadeInUp">
+                        <div class="icon"><i class="icon-heart"></i></div>
+                        <h4><strong>Cognition</strong> Applications</h4>
+                        <p>Apply cognitive studies to designs to best manipulate designs for the user</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service wow slideInRight">
+                        <div class="icon"><i class="icon-office"></i></div>
+                        <h4><strong>Rapid </strong>Prototyping</h4>
+                        <p>Create paper prototypes of applications for speed and cost efficiency</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow slideInLeft">
+                        <div class="icon"><i class="icon-mobile"></i></div>
+                        <h4>Lo and Hi <strong>Fidelity</strong> Prototypes</h4>
+                        <p>Using Balsamiq and Invision, I make early drafts of web applications before actual coding begins</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow fadeInUp">
+                        <div class="icon"><i class="icon-code"></i></div>
+                        <h4><strong>Heuristic</strong> Evaluations</h4>
+                        <p>Make use of Nielsen's heuristics to test prototypes and applications for design flaws</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow slideInRight">
+                        <div class="icon"><i class="icon-web-browser"></i></div>
+                        <h4><strong>A/B</strong> Testing</h4>
+                        <p>Using Google Analytics, I perform user tests of web applications akin to actual lab experiments</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div> <!-- *** end row *** -->
+        </div> <!-- *** end container *** -->
+    </section> <!-- *** end Why Choose Us *** -->
+
+
+    <!-- =========================
+       Our Skills
+    ============================== -->
+    <section id="our-skills" class="our-skills">
+        <div class="container padding-top-large">
+            <h2>
+                My
+                <span class="light-text main-color">Software Skills</span>
+            </h2>
+            <div class="line main-bg margin-bottom-medium"></div>
+            <div class="row">
+                <div class="col-md-7">
+                    <ul class="skill-bar">
+                        <li>
+                            <p>HTML/CSS - Bootstrap</p>
+                            <div class="wrapper"><span data-width="90"></span></div>
+                        </li>
+                        <li>
+                            <p>Javascript - AngularJS 1&2, Node.js, Express.js, jQuery, D3</p>
+                            <div class="wrapper"><span data-width="80"></span></div>
+                        </li>
+                        <li>
+                            <p>C/C++ - Advanced Data Structures</p>
+                            <div class="wrapper"><span data-width="70"></span></div>
+                        </li>
+                        <li>
+                            <p>Java - Advanced Data Structures</p>
+                            <div class="wrapper"><span data-width="70"></span></div>
+                        </li>
+                        <li>
+                            <p>SQL - MongoDB, PostgreSQL</p>
+                            <div class="wrapper"><span data-width="40"></span></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-5">
+                    <img src="img/skill-bg.jpg" class="center-block img-responsive" alt="Our Skills are excellent">
+                </div> -->
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow slideInLeft">
+                      <h3>Some other technologies and languages that I'm currently exploring: </h3>
+                        <div class="icon"><i class="icon-idea"></i></div>
+                        <h4><strong>ReactJS</strong></h4>
+                        <div class="icon"><i class="icon-idea"></i></div>
+                        <h4><strong>Python</strong></h4>
+                        <div class="icon"><i class="icon-idea"></i></div>
+                        <h4><strong>PHP</strong></h4>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div> <!-- *** end row *** -->
+        </div> <!-- *** end container *** -->
+    </section> <!-- *** end Our Skills *** -->
+
+    <!-- =========================
+       Portfolio
+    ============================== -->
+    <section id="portfolio" class="portfolio padding-large text-center">
+        <div class="container margin-bottom-medium">
+            <div class="row margin-bottom-medium wow fadeInUp">
+                <h2>
+                    My
+                    <strong class="main-color bold-text">Projects</strong>
+                </h2>
+                <div class="line main-bg"></div>
+
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="subtitle">These consist of Web Applications and stand-alone Programs</div>
+                    <p>Currently I only have a couple of side projects, but I will surely have more soon!</p>
+                    <p>
+                      Check out my Github @ Github.com/Koshinryo
+                    </p>
+                </div>
+            </div> <!-- *** end row *** -->
+
+            <!-- *****  Portfolio Filters ***** -->
+            <div class="filters">
+                <ul class="wow lightSpeedIn">
+                    <li><a href="#" data-filter="*" class="active"><i class="icon-grid"></i></a></li>
+                    <li><a href="#" data-filter=".print">Student Leader Headquarters</a></li>
+                    <li><a href="#" data-filter=".icon">PEACH</a></li>
+                    <li><a href="#" data-filter=".photography">DeeCaf</a></li>
+                    <li><a href="#" data-filter=".web-design">Actor Graphs</a></li>
+                    <li><a href="#" data-filter=".ui">Autocomplete</a></li>
+                </ul>
+            </div> <!-- *** end filters *** -->
+        </div> <!-- *** end container *** -->
+
+        <!-- *****  Portfolio  wrapper ***** -->
+        <div class="portfolio-wrapper margin-bottom-medium">
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item print">
+                <div class="portfolio">
+                    <a href="http://co2017bros.heroku.com/" data-lightbox-gallery="portfolio">
+                        <img src="img/projects/slh1.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                        <div class="portfolio-overlay hvr-rectangle-out">
+                            <h2 class="margin-bottom-small">
+                                <strong class="white-color bold-text">Student Leader Headquarters</strong>
+                            </h2>
+                            <div class="button">View Project</div>
+                        </div><!-- END PORTFOLIO OVERLAY -->
+                    </a>
+               </div>
+            </div> <!-- *** end portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item photography">
+               <div class="portfolio">
+                  <a href="http://pea-c-h.herokuapp.com/" data-lightbox-gallery="portfolio">
+                    <img src="img/projects/peach1.jpg" alt="Portfolio 2"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            <strong class="white-color bold-text">PEACH</strong>
+                        </h2>
+                        <div class="button">View Project</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item photography">
+               <div class="portfolio">
+                  <a href="http://deecaf.heroku.com/" data-lightbox-gallery="portfolio">
+                    <img src="img/projects/deecaf1.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            <strong class="white-color bold-text">DeeCaf</strong>
+                        </h2>
+                        <div class="button">View Project</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item print">
+               <div class="portfolio">
+                  <a href="https://github.com/Koshinryo/myprojects/tree/master/Actor-Graphs" data-lightbox-gallery="portfolio">
+                    <img src="img/projects/actor1.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            <strong class="white-color bold-text">Actor Graphs</strong>
+                        </h2>
+                        <div class="button">View Project</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item ui">
+               <div class="portfolio">
+                  <a href="https://github.com/Koshinryo/myprojects/tree/master/Autocomplete%2BSpellcheck" data-lightbox-gallery="portfolio">
+                    <img src="img/projects/autocomp1.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            <strong class="white-color bold-text">Autocomplete</strong>
+                        </h2>
+                        <div class="button">View Project</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item web-design">
+               <div class="portfolio">
+                  <a href="https://github.com/Koshinryo/myprojects/tree/master/Huffman-Encoding%2BDecoding" data-lightbox-gallery="portfolio">
+                    <img src="img/projects/huffman1.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            <strong class="white-color bold-text">Huffman Compression</strong>
+                        </h2>
+                        <div class="button">View Project</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item web-design">
+               <div class="portfolio">
+                  <a href="https://github.com/Koshinryo/myprojects/tree/master/Tetris-incomplete" data-lightbox-gallery="portfolio">
+                    <img src="img/projects/tetris1.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            <strong class="white-color bold-text">Tetris</strong>
+                        </h2>
+                        <div class="button">View Project</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item icon">
+               <div class="portfolio">
+                  <a href="img/projects/react_comingsoon.jpg" data-lightbox-gallery="portfolio">
+                    <img src="img/projects/react_comingsoon.jpg" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            (TBA) <strong class="white-color bold-text">Apartment Finances</strong>
+                        </h2>
+                        <div class="button">View Project</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+        </div> <!-- *** end  portfolio-wrapper *** -->
+        <!-- a href="" after more projects can be added! -->
+        <class="button light margin-top-medium margin-bottom-medium hvr-grow"><i class="icon-reload"></i> Load More</a>
+    </section> <!-- *** end Portfolio *** -->
+
+    <!-- =========================
+       Contact
+    ============================== -->
+    <section id="send-message" class="send-message main-bg white-color text-center">
+        <div class="send-icon">
+            <i class="fa fa-paper-plane"></i>
+        </div>
+        <p> Email Me at <span class="bold-text">gonzales.paulo19@gmail.com</span> </p>
+        <p>
+          Or Call <span class="bold-text">(805)766-9613</span>
+        </p>
+
+    </section> <!-- *** end Send Message *** -->
+
+
+    <!-- =========================
+       Footer
+    ============================== -->
+    <footer id="footer" class="footer">
+        <div class="container padding-large text-center">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <figure class="margin-bottom-medium">
+                        <img src="img/logo.png" class="footer-logo" alt="Krefolio">
+                    </figure>
+                    <p class="margin-bottom-medium">Powered by the KreFolio template, thank you!</p>
+
+                </div>
+            </div>
+        </div>
+    </footer> <!-- *** end Footer *** -->
+
+    <!-- =========================
+       Back to top button
+    ============================== -->
+    <div class="back-to-top" data-rel="header">
+        <i class="icon-up"></i>
     </div>
-    <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-
+    <!-- =========================
+     JavaScripts
+    ============================== -->
+    <script src="js/vendor/jquery-1.11.1.js"></script>
+    <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOsiOjjoOiFBmXLU0adNjsnCKLpcDfRyI"></script>
+    <script src="js/twitterFetcher_min.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/jquery.circliful.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/notie.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
