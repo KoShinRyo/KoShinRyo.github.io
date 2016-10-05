@@ -136,7 +136,7 @@ h6 {
   text-shadow: none;
 }
 ::selection {
-  background: #3498db;
+  /*background: #3498db;*/
   color: #fff;
   text-shadow: none;
 }
